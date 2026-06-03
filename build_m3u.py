@@ -10,8 +10,6 @@ count = 0
 for cat, items in data.items():
     for item in items:
         stream = item.get("stream")
-
-        # пропускаємо тільки null
         if not stream:
             continue
 
@@ -19,10 +17,9 @@ for cat, items in data.items():
 
         lines.append(f'#EXTINF:-1 group-title="{cat.upper()}",{title}')
         lines.append(stream)
-
         count += 1
 
 with open("playlist.m3u", "w", encoding="utf-8") as f:
     f.write("\n".join(lines))
 
-print(f"[OK] Playlist created: {count} streams")
+print("M3U OK:", count)
