@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -21,14 +21,17 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           pip install requests beautifulsoup4
 
       - name: Run scraper
         run: python scraper.py
 
-      - name: Commit result
+      - name: Build M3U
+        run: python build_m3u.py
+
+      - name: Commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
