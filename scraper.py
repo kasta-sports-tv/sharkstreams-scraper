@@ -1,48 +1,46 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 import re
+import requests
+from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 BASE = "https://sharkstreams.net"
 
 CATEGORIES = ["mlb", "nba", "soccer", "nhl", "nfl"]
 
-headers = {
-    "User-Agent": "Mozilla/5.0"
-}
+headers = {"User-Agent": "Mozilla/5.0"}
 
-# 🔥 покращений витяг stream
+
 def get_stream(channel_id):
     url = f"{BASE}/player.php?channel={channel_id}"
 
-    try:
-        r = requests.get(url, headers=headers, timeout=15)
-        html = r.text
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
 
-        # 1. прямий пошук m3u8
-        matches = re.findall(r"https?://[^\"]+\.m3u8[^\"]*", html)
-        if matches:
-            return matches[0]
+        streams = []
 
-        # 2. пошук у JS/рядках
-        matches = re.findall(r"['\"](https?://[^'\"]+\.m3u8[^'\"]*)['\"]", html)
-        if matches:
-            return matches[0]
+        def handle_response(response):
+            if ".m3u8" in response.url:
+                streams.append(response.url)
 
-    except:
-        return None
+        page.on("response", handle_response)
 
-    return None
+        try:
+            page.goto(url, timeout=30000)
+            page.wait_for_timeout(8000)
+        except:
+            pass
+
+        browser.close()
+
+        return streams[0] if streams else None
 
 
 def parse_category(cat):
     url = f"{BASE}/category/{cat}"
-
-    try:
-        r = requests.get(url, headers=headers, timeout=15)
-        soup = BeautifulSoup(r.text, "html.parser")
-    except:
-        return []
+    r = requests.get(url, headers=headers, timeout=15)
+    soup = BeautifulSoup(r.text, "html.parser")
 
     results = []
 
@@ -75,10 +73,8 @@ def parse_category(cat):
 all_data = {}
 
 for c in CATEGORIES:
-    print(f"Parsing {c}...")
+    print(f"Parsing {c}")
     all_data[c] = parse_category(c)
 
 with open("output.json", "w") as f:
     json.dump(all_data, f, indent=2)
-
-print("Done")
