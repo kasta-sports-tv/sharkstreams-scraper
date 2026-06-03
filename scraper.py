@@ -1,45 +1,56 @@
-import requests
-from bs4 import BeautifulSoup
-import re
 import json
 import time
+from playwright.sync_api import sync_playwright
 
 BASE = "https://sharkstreams.net"
 CATEGORIES = ["mlb", "nba", "soccer", "nhl", "nfl"]
-
-headers = {"User-Agent": "Mozilla/5.0"}
 
 
 def get_stream(channel_id):
     url = f"{BASE}/player.php?channel={channel_id}"
 
+    stream_url = None
+
     try:
-        r = requests.get(url, headers=headers, timeout=15)
-        html = r.text
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
 
-        matches = re.findall(r"https?://[^\"']+\.m3u8[^\"']*", html)
-        if matches:
-            return matches[0]
+            def handle_response(response):
+                nonlocal stream_url
+                if ".m3u8" in response.url:
+                    stream_url = response.url
 
-    except:
-        pass
+            page.on("response", handle_response)
+
+            page.goto(url, timeout=60000)
+            page.wait_for_timeout(8000)
+
+            browser.close()
+
+            return stream_url
+
+    except Exception as e:
+        print("[ERROR]", channel_id, e)
 
     return None
 
 
 def parse_category(cat):
+    import requests
+    from bs4 import BeautifulSoup
+
     url = f"{BASE}/category/{cat}"
-    r = requests.get(url, headers=headers, timeout=15)
+    r = requests.get(url, timeout=15)
     soup = BeautifulSoup(r.text, "html.parser")
 
-    rows = soup.select(".row")
     results = []
 
-    for row in rows:
+    for row in soup.select(".row"):
         try:
             title = row.select_one(".ch-name").text.strip()
-
             onclick = row.select_one("a.hd-link")["onclick"]
+
             channel_id = onclick.split("channel=")[1].split("'")[0]
 
             stream = get_stream(channel_id)
@@ -59,7 +70,7 @@ def parse_category(cat):
 all_data = {}
 
 for c in CATEGORIES:
-    print(f"[INFO] {c}")
+    print("[INFO]", c)
     all_data[c] = parse_category(c)
 
 with open("output.json", "w", encoding="utf-8") as f:
