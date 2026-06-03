@@ -3,7 +3,7 @@ import time
 from playwright.sync_api import sync_playwright
 
 BASE = "https://sharkstreams.net"
-CATEGORIES = ["mlb", "nba", "soccer", "nhl", "nfl"]
+CATEGORIES = ["soccer", "tennis", "nba", "mlb", "nhl", "nfl", "boxing"]
 
 
 def get_stream(channel_id):
