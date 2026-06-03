@@ -1,1 +1,57 @@
 #EXTM3U
+#EXTINF:-1 group-title="MLB",New York Mets vs Seattle Mariners
+https://lee1.lefiles.cfd/live/1/stream.m3u8?expires=1780514204&token=9d8fbea9bbbdb0f03949f30bdf9273b8a3e9493be5b2dd15138a7aa4ad500af1
+#EXTINF:-1 group-title="MLB",San Diego Padres vs Philadelphia Phillies
+https://lee1.lefiles.cfd/live/2/stream.m3u8?expires=1780514204&token=cdda0fb2c8fa52a8657e76ffb21bd31866d5df677d4bf8c8b88114d4bfe59d35
+#EXTINF:-1 group-title="MLB",Baltimore Orioles vs Boston Red Sox
+https://lee1.lefiles.cfd/live/3/stream.m3u8?expires=1780514205&token=6c3c7f8d60b1906806ff1b311cb26a4bc1ef74559a29def3d4919ebec6f104e3
+#EXTINF:-1 group-title="MLB",Cleveland Guardians vs New York Yankees
+https://lee1.lefiles.cfd/live/4/stream.m3u8?expires=1780514205&token=a1e5bbad6af40579451a499ef5e359ab6449e3eb8fbf6caa31272f519e8a17df
+#EXTINF:-1 group-title="MLB",Kansas City Royals vs Cincinnati Reds
+https://lee1.lefiles.cfd/live/5/stream.m3u8?expires=1780514205&token=d28dc92a9351d86b9d2d2a6bc135336cd03be92b7695c242bd0bebfb0f9c0b2c
+#EXTINF:-1 group-title="MLB",Toronto Blue Jays vs Atlanta Braves
+https://lee2.lefiles.cfd/live/6/stream.m3u8?expires=1780514206&token=ecfbcb657f5f31d4b65b274f4979c787ad4c240d837d37812244fde98672d0ff
+#EXTINF:-1 group-title="MLB",San Francisco Giants vs Milwaukee Brewers
+https://lee2.lefiles.cfd/live/7/stream.m3u8?expires=1780514206&token=200c1fe32224b65befcd8523bd4581ac39186e0a4cfa95125adc5a2aca0fde0f
+#EXTINF:-1 group-title="MLB",Texas Rangers vs St. Louis Cardinals
+https://lee2.lefiles.cfd/live/8/stream.m3u8?expires=1780514206&token=30081a231a1dbe072a984fce788d2cb0af07be8a39746b63de6a787915e1de69
+#EXTINF:-1 group-title="MLB",Athletics vs Chicago Cubs
+https://lee2.lefiles.cfd/live/9/stream.m3u8?expires=1780514207&token=14efe4b3f2da852a7b0c9bd3d32aea621156309736d6f32654d3745a6c99dd55
+#EXTINF:-1 group-title="MLB",Pittsburgh Pirates vs Houston Astros
+https://lee2.lefiles.cfd/live/10/stream.m3u8?expires=1780514207&token=45e728fa7bc1e0e796889486a1c884f836d62ec800df5b1959408e4ee9dac90f
+#EXTINF:-1 group-title="MLB",Colorado Rockies vs Los Angeles Angels
+https://lee3.lefiles.cfd/live/11/stream.m3u8?expires=1780514208&token=9132bc4ee8545a3c33a8e43240c3f0fe002169cec60d90570fa4418618f70b1f
+#EXTINF:-1 group-title="MLB",Los Angeles Dodgers vs Arizona Diamondbacks
+https://lee3.lefiles.cfd/live/12/stream.m3u8?expires=1780514208&token=acbc934456006bd0f38d3741ec3de13da38e03efc646c56f3e6775495d039b2b
+#EXTINF:-1 group-title="NBA",New York Knicks vs San Antonio Spurs
+https://lba1.lefiles.cfd/live/spurs/stream.m3u8?expires=1780514207&token=186afe1dddfae027dd499bacef86f58a87272bda7358bdc57585176f5b6c1dff
+#EXTINF:-1 group-title="FIGHTING",New York Mets vs Seattle Mariners
+https://lee1.lefiles.cfd/live/1/stream.m3u8?expires=1780514204&token=9d8fbea9bbbdb0f03949f30bdf9273b8a3e9493be5b2dd15138a7aa4ad500af1
+#EXTINF:-1 group-title="FIGHTING",San Diego Padres vs Philadelphia Phillies
+https://lee1.lefiles.cfd/live/2/stream.m3u8?expires=1780514204&token=cdda0fb2c8fa52a8657e76ffb21bd31866d5df677d4bf8c8b88114d4bfe59d35
+#EXTINF:-1 group-title="FIGHTING",Baltimore Orioles vs Boston Red Sox
+https://lee1.lefiles.cfd/live/3/stream.m3u8?expires=1780514205&token=6c3c7f8d60b1906806ff1b311cb26a4bc1ef74559a29def3d4919ebec6f104e3
+#EXTINF:-1 group-title="FIGHTING",Cleveland Guardians vs New York Yankees
+https://lee1.lefiles.cfd/live/4/stream.m3u8?expires=1780514205&token=a1e5bbad6af40579451a499ef5e359ab6449e3eb8fbf6caa31272f519e8a17df
+#EXTINF:-1 group-title="FIGHTING",Kansas City Royals vs Cincinnati Reds
+https://lee1.lefiles.cfd/live/5/stream.m3u8?expires=1780514205&token=d28dc92a9351d86b9d2d2a6bc135336cd03be92b7695c242bd0bebfb0f9c0b2c
+#EXTINF:-1 group-title="FIGHTING",Toronto Blue Jays vs Atlanta Braves
+https://lee2.lefiles.cfd/live/6/stream.m3u8?expires=1780514206&token=ecfbcb657f5f31d4b65b274f4979c787ad4c240d837d37812244fde98672d0ff
+#EXTINF:-1 group-title="FIGHTING",San Francisco Giants vs Milwaukee Brewers
+https://lee2.lefiles.cfd/live/7/stream.m3u8?expires=1780514206&token=200c1fe32224b65befcd8523bd4581ac39186e0a4cfa95125adc5a2aca0fde0f
+#EXTINF:-1 group-title="FIGHTING",Texas Rangers vs St. Louis Cardinals
+https://lee2.lefiles.cfd/live/8/stream.m3u8?expires=1780514206&token=30081a231a1dbe072a984fce788d2cb0af07be8a39746b63de6a787915e1de69
+#EXTINF:-1 group-title="FIGHTING",Toronto Tempo vs New York Liberty
+https://lba4.lefiles.cfd/live/tempo/stream.m3u8?expires=1780523781&token=c663554004916491e45e51143ef95435843cda86cbaba323c0f1b2d39ccab4d8
+#EXTINF:-1 group-title="FIGHTING",Athletics vs Chicago Cubs
+https://lee2.lefiles.cfd/live/9/stream.m3u8?expires=1780514207&token=14efe4b3f2da852a7b0c9bd3d32aea621156309736d6f32654d3745a6c99dd55
+#EXTINF:-1 group-title="FIGHTING",Pittsburgh Pirates vs Houston Astros
+https://lee2.lefiles.cfd/live/10/stream.m3u8?expires=1780514207&token=45e728fa7bc1e0e796889486a1c884f836d62ec800df5b1959408e4ee9dac90f
+#EXTINF:-1 group-title="FIGHTING",New York Knicks vs San Antonio Spurs
+https://lba1.lefiles.cfd/live/spurs/stream.m3u8?expires=1780514207&token=186afe1dddfae027dd499bacef86f58a87272bda7358bdc57585176f5b6c1dff
+#EXTINF:-1 group-title="FIGHTING",Colorado Rockies vs Los Angeles Angels
+https://lee3.lefiles.cfd/live/11/stream.m3u8?expires=1780514208&token=9132bc4ee8545a3c33a8e43240c3f0fe002169cec60d90570fa4418618f70b1f
+#EXTINF:-1 group-title="FIGHTING",Los Angeles Dodgers vs Arizona Diamondbacks
+https://lee3.lefiles.cfd/live/12/stream.m3u8?expires=1780514208&token=acbc934456006bd0f38d3741ec3de13da38e03efc646c56f3e6775495d039b2b
+#EXTINF:-1 group-title="FIGHTING",Phoenix Mercury vs Seattle Storm
+https://lba4.lefiles.cfd/live/storm/stream.m3u8?expires=1780514208&token=a4d60e5ea36cf86de637202fb611b97ccaa2178296232b855a7dd1d3c0d1a20a
