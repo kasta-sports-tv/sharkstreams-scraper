@@ -2,8 +2,8 @@ import json
 import time
 from playwright.sync_api import sync_playwright
 
-BASE = "https://sharkstreams.net"
-CATEGORIES = ["soccer", "tennis", "nba", "mlb", "nhl", "nfl", "wnba", "boxing"]
+BASE = "https://roxiestreams.info/"
+CATEGORIES = ["soccer", "mlb", "nba", "nfl", "nhl", "fighting", "motorsports"]
 
 
 def get_stream(channel_id):
