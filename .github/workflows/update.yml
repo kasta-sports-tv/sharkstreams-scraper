@@ -1,32 +1,7 @@
-name: Update playlist
-
-on:
-  schedule:
-    - cron: "*/15 * * * *"
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
-
-      - name: Install deps
-        run: pip install -r requirements.txt
-
-      - name: Run scraper
-        run: python scraper.py
-
-      - name: Commit result
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add output.json
-          git commit -m "update" || exit 0
-          git push
+- name: Commit result
+  run: |
+    git config user.name github-actions
+    git config user.email github-actions@github.com
+    git add output.json
+    git commit -m "update" || exit 0
+    git push
