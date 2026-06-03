@@ -1,1 +1,23 @@
 #EXTM3U
+#EXTINF:-1 group-title="MLB",Cleveland Guardians vs New York Yankees
+https://lee1.lefiles.cfd/live/1/stream.m3u8?expires=1780443422&token=97b0b1f26eb8d8d2c84fd31315c61f6b58a736a8c6485c8311d0f747c4c9cd67
+#EXTINF:-1 group-title="MLB",Toronto Blue Jays vs Atlanta Braves
+https://lee1.lefiles.cfd/live/2/stream.m3u8?expires=1780443709&token=1fb1d6a1983cdf6da7766187d6694ab1c0790dd13ecdeca875df3e71b8b992b0
+#EXTINF:-1 group-title="MLB",Chicago White Sox vs Minnesota Twins
+https://lee1.lefiles.cfd/live/9/stream.m3u8?expires=1780443712&token=fbe3671fc4812c53f3757225025db041e374c246e8fce6cafff9c691d0ed4dfd
+#EXTINF:-1 group-title="MLB",San Francisco Giants vs Milwaukee Brewers
+https://lee1.lefiles.cfd/live/3/stream.m3u8?expires=1780443713&token=6588c3ba80e0f45008ba2216d26abd5d4853a1b33d1eaf267194eb6520f67f43
+#EXTINF:-1 group-title="MLB",Texas Rangers vs St. Louis Cardinals
+https://lee1.lefiles.cfd/live/4/stream.m3u8?expires=1780443714&token=eedafabf783c3b1b87fcb7fdd159999a96f26e2e1003ae3a4ecf3b80329b66c2
+#EXTINF:-1 group-title="MLB",Athletics vs Chicago Cubs
+https://lee2.lefiles.cfd/live/5/stream.m3u8?expires=1780443716&token=3cc37c8c82346836c5550ad5b21e41fe9770f21cef0ec2d38f303ccebcd313de
+#EXTINF:-1 group-title="MLB",Pittsburgh Pirates vs Houston Astros
+https://lee2.lefiles.cfd/live/6/stream.m3u8?expires=1780443717&token=f24800680b69496ba1feff7794d0590e3c247c84a884e3865d1a7348c5ae0deb
+#EXTINF:-1 group-title="MLB",Colorado Rockies vs Los Angeles Angels
+https://lee2.lefiles.cfd/live/7/stream.m3u8?expires=1780443719&token=5c0f80a8f5c47649edc49429a6cff0acec05b5abcd9f17f8b4e66a811b6773e5
+#EXTINF:-1 group-title="MLB",New York Mets vs Seattle Mariners
+https://lee2.lefiles.cfd/live/8/stream.m3u8?expires=1780443720&token=d936fc1fb0789cd8b820c0a9f7b8bdc270c6d190f3251edc7d4e53d7f8c1b73c
+#EXTINF:-1 group-title="MLB",Los Angeles Dodgers vs Arizona Diamondbacks
+https://lee2.lefiles.cfd/live/10/stream.m3u8?expires=1780443725&token=6b0d75520ef89052f79f98034f7e22e165b7b42ecf8bec246a44d37db2deaf71
+#EXTINF:-1 group-title="NHL",Vegas Golden Knights vs Carolina Hurricanes
+https://lee1.lefiles.cfd/live/nhl/stream.m3u8?expires=1780443393&token=edeea5b9b9d46726919430d22ee322c6329ce6da7663285f85778ec188b3dd03
