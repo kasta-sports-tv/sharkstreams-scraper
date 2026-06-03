@@ -2,7 +2,7 @@ import json
 import time
 from playwright.sync_api import sync_playwright
 
-BASE = "https://roxiestreams.info/"
+BASE = "https://sharkstreams.net"
 CATEGORIES = ["soccer", "mlb", "nba", "nfl", "nhl", "fighting", "motorsports"]
 
 
