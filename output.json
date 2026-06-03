@@ -62,5 +62,27 @@
     }
   ],
   "nfl": [],
+  "wnba": [
+    {
+      "title": "Connecticut Sun vs Atlanta Dream",
+      "channel": "2794",
+      "stream": "https://lee1.lefiles.cfd/live/dream/stream.m3u8?expires=1780443394&token=b345570e6928a88239bb80d86d6b2b34dc100372be73f83660079b0eeb5a895b"
+    },
+    {
+      "title": "Chicago Sky vs Washington Mystics",
+      "channel": "2795",
+      "stream": "https://lee2.lefiles.cfd/live/mystics/stream.m3u8?expires=1780443395&token=6ed94d69a6d461dbba9c99172a700102dccadf8bebcdacbebf236ec0bbca4180"
+    },
+    {
+      "title": "Las Vegas Aces vs Los Angeles Sparks",
+      "channel": "2796",
+      "stream": "https://lee1.lefiles.cfd/live/aces/stream.m3u8?expires=1780443398&token=c43830f8d4a4ad11dda6b2b801051d75a7cc298ab2276655fe572bfa5624ee43"
+    },
+    {
+      "title": "Portland Fire vs Golden State Valkyries",
+      "channel": "2797",
+      "stream": "https://lee2.lefiles.cfd/live/fire/stream.m3u8?expires=1780443398&token=2a37d18a4997c2bf6fdf98c117f084f5cad84555deef325368d9574c9dec50b7"
+    }
+  ],
   "boxing": []
 }

@@ -21,3 +21,11 @@ https://lee2.lefiles.cfd/live/8/stream.m3u8?expires=1780443397&token=07382520327
 https://lee2.lefiles.cfd/live/10/stream.m3u8?expires=1780443398&token=9c1cc9bcd53ddd5b441ee21771c10ccdac273a3b7fad855fd7d8baea90289f2f
 #EXTINF:-1 group-title="NHL",Vegas Golden Knights vs Carolina Hurricanes
 https://lee1.lefiles.cfd/live/nhl/stream.m3u8?expires=1780443396&token=ec775011a6c07d4dbec9cd71e2f96341dbb0b002bc1b355217df30399c529fba
+#EXTINF:-1 group-title="WNBA",Connecticut Sun vs Atlanta Dream
+https://lee1.lefiles.cfd/live/dream/stream.m3u8?expires=1780443394&token=b345570e6928a88239bb80d86d6b2b34dc100372be73f83660079b0eeb5a895b
+#EXTINF:-1 group-title="WNBA",Chicago Sky vs Washington Mystics
+https://lee2.lefiles.cfd/live/mystics/stream.m3u8?expires=1780443395&token=6ed94d69a6d461dbba9c99172a700102dccadf8bebcdacbebf236ec0bbca4180
+#EXTINF:-1 group-title="WNBA",Las Vegas Aces vs Los Angeles Sparks
+https://lee1.lefiles.cfd/live/aces/stream.m3u8?expires=1780443398&token=c43830f8d4a4ad11dda6b2b801051d75a7cc298ab2276655fe572bfa5624ee43
+#EXTINF:-1 group-title="WNBA",Portland Fire vs Golden State Valkyries
+https://lee2.lefiles.cfd/live/fire/stream.m3u8?expires=1780443398&token=2a37d18a4997c2bf6fdf98c117f084f5cad84555deef325368d9574c9dec50b7
