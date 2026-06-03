@@ -1,8 +1,6 @@
-import json
-import re
 import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
+import re
 
 BASE = "https://sharkstreams.net"
 
@@ -11,70 +9,84 @@ CATEGORIES = ["mlb", "nba", "soccer", "nhl", "nfl"]
 headers = {"User-Agent": "Mozilla/5.0"}
 
 
+# ---------- STREAM ----------
 def get_stream(channel_id):
     url = f"{BASE}/player.php?channel={channel_id}"
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
+    try:
+        r = requests.get(url, headers=headers, timeout=15)
+        html = r.text
 
-        streams = []
+        matches = re.findall(r"https?://[^\"]+\.m3u8[^\"]*", html)
+        if matches:
+            return matches[0]
 
-        def handle_response(response):
-            if ".m3u8" in response.url:
-                streams.append(response.url)
+        matches = re.findall(r"['\"](https?://[^'\"]+\.m3u8[^'\"]*)['\"]", html)
+        if matches:
+            return matches[0]
 
-        page.on("response", handle_response)
+    except:
+        return None
 
-        try:
-            page.goto(url, timeout=30000)
-            page.wait_for_timeout(8000)
-        except:
-            pass
-
-        browser.close()
-
-        return streams[0] if streams else None
+    return None
 
 
+# ---------- CATEGORY ----------
 def parse_category(cat):
     url = f"{BASE}/category/{cat}"
     r = requests.get(url, headers=headers, timeout=15)
     soup = BeautifulSoup(r.text, "html.parser")
 
-    results = []
+    streams = []
 
     rows = soup.select(".row")
 
     for row in rows:
         try:
-            name = row.select_one(".ch-name").text.strip()
-            date = row.select_one(".ch-date").text.strip()
+            title = row.select_one(".ch-name").text.strip()
 
             onclick = row.select_one("a.hd-link")["onclick"]
             channel_id = onclick.split("channel=")[1].split("'")[0]
 
             stream = get_stream(channel_id)
 
-            results.append({
-                "title": name,
-                "date": date,
-                "channel": channel_id,
-                "player": f"{BASE}/player.php?channel={channel_id}",
-                "stream": stream
-            })
+            if stream:
+                streams.append({
+                    "title": title,
+                    "url": stream
+                })
 
         except:
             continue
 
-    return results
+    return streams
 
 
-all_data = {}
+# ---------- BUILD M3U ----------
+def build_m3u(all_streams):
+    lines = ["#EXTM3U"]
+
+    for cat, items in all_streams.items():
+        for item in items:
+            title = item["title"]
+            url = item["url"]
+
+            lines.append(f'#EXTINF:-1 group-title="{cat.upper()}",{title}')
+            lines.append(url)
+
+    return "\n".join(lines)
+
+
+# ---------- MAIN ----------
+all_streams = {}
 
 for c in CATEGORIES:
-    print(f"Parsing {c}")
-    all_data[c] = parse_category(c)
+    print(f"Parsing {c}...")
+    all_streams[c] = parse_category(c)
 
-with open("output.json", "w") as f:
-    json.dump(all_data, f, indent=2)
+m3u_content = build_m3u(all_streams)
+
+with open("playlist.m3u", "w", encoding="utf-8") as f:
+    f.write(m3u_content)
+
+print("M3U generated")
