@@ -7,25 +7,42 @@ BASE = "https://sharkstreams.net"
 
 CATEGORIES = ["mlb", "nba", "soccer", "nhl", "nfl"]
 
-headers = {"User-Agent": "Mozilla/5.0"}
+headers = {
+    "User-Agent": "Mozilla/5.0"
+}
 
+# 🔥 покращений витяг stream
 def get_stream(channel_id):
     url = f"{BASE}/player.php?channel={channel_id}"
-    r = requests.get(url, headers=headers, timeout=15)
 
-    # шукаємо m3u8 в HTML/JS
-    matches = re.findall(r"https?://[^\"']+\.m3u8[^\"']*", r.text)
+    try:
+        r = requests.get(url, headers=headers, timeout=15)
+        html = r.text
 
-    if matches:
-        return matches[0]
+        # 1. прямий пошук m3u8
+        matches = re.findall(r"https?://[^\"]+\.m3u8[^\"]*", html)
+        if matches:
+            return matches[0]
+
+        # 2. пошук у JS/рядках
+        matches = re.findall(r"['\"](https?://[^'\"]+\.m3u8[^'\"]*)['\"]", html)
+        if matches:
+            return matches[0]
+
+    except:
+        return None
 
     return None
 
 
 def parse_category(cat):
     url = f"{BASE}/category/{cat}"
-    r = requests.get(url, headers=headers, timeout=15)
-    soup = BeautifulSoup(r.text, "html.parser")
+
+    try:
+        r = requests.get(url, headers=headers, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
+    except:
+        return []
 
     results = []
 
@@ -48,6 +65,7 @@ def parse_category(cat):
                 "player": f"{BASE}/player.php?channel={channel_id}",
                 "stream": stream
             })
+
         except:
             continue
 
@@ -57,7 +75,10 @@ def parse_category(cat):
 all_data = {}
 
 for c in CATEGORIES:
+    print(f"Parsing {c}...")
     all_data[c] = parse_category(c)
 
 with open("output.json", "w") as f:
     json.dump(all_data, f, indent=2)
+
+print("Done")
