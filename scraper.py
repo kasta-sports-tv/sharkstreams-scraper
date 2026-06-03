@@ -1,73 +1,53 @@
-import requests
-from bs4 import BeautifulSoup
-import re
 import json
-import time
+import re
+from playwright.sync_api import sync_playwright
 
 BASE = "https://sharkstreams.net"
 CATEGORIES = ["mlb", "nba", "soccer", "nhl", "nfl"]
 
-headers = {
-    "User-Agent": "Mozilla/5.0"
-}
 
-
-# ---------- STREAM ----------
 def get_stream(channel_id):
     url = f"{BASE}/player.php?channel={channel_id}"
 
     try:
-        r = requests.get(url, headers=headers, timeout=15)
-        html = r.text
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
 
-        # 1) прямий m3u8
-        matches = re.findall(r"https?://[^\"']+\.m3u8[^\"']*", html)
-        if matches:
-            return matches[0]
+            page.goto(url, timeout=30000)
+            page.wait_for_timeout(5000)
 
-        # 2) iframe пошук (ВАЖЛИВО)
-        iframe = re.search(r'<iframe[^>]+src=["\'](.*?)["\']', html)
-        if iframe:
-            iframe_url = iframe.group(1)
+            html = page.content()
 
-            if iframe_url.startswith("/"):
-                iframe_url = BASE + iframe_url
+            matches = re.findall(r"https?://[^\"']+\.m3u8[^\"']*", html)
 
-            try:
-                r2 = requests.get(iframe_url, headers=headers, timeout=15)
-                html2 = r2.text
+            browser.close()
 
-                matches2 = re.findall(r"https?://[^\"']+\.m3u8[^\"']*", html2)
-                if matches2:
-                    return matches2[0]
-
-            except:
-                pass
+            if matches:
+                return matches[0]
 
     except Exception as e:
-        print(f"[ERROR] channel {channel_id}: {e}")
+        print(f"[ERROR] {channel_id}: {e}")
 
     return None
 
 
-# ---------- CATEGORY ----------
 def parse_category(cat):
     url = f"{BASE}/category/{cat}"
 
-    try:
-        r = requests.get(url, headers=headers, timeout=15)
-        soup = BeautifulSoup(r.text, "html.parser")
-    except:
-        return []
+    import requests
+    from bs4 import BeautifulSoup
 
-    rows = soup.select(".row")
+    r = requests.get(url, timeout=15)
+    soup = BeautifulSoup(r.text, "html.parser")
+
     results = []
 
-    for row in rows:
+    for row in soup.select(".row"):
         try:
             title = row.select_one(".ch-name").text.strip()
-
             onclick = row.select_one("a.hd-link")["onclick"]
+
             channel_id = onclick.split("channel=")[1].split("'")[0]
 
             stream = get_stream(channel_id)
@@ -84,14 +64,13 @@ def parse_category(cat):
     return results
 
 
-# ---------- MAIN ----------
 all_data = {}
 
 for c in CATEGORIES:
-    print(f"[INFO] Parsing {c}")
+    print(f"[INFO] {c}")
     all_data[c] = parse_category(c)
 
 with open("output.json", "w", encoding="utf-8") as f:
     json.dump(all_data, f, indent=2, ensure_ascii=False)
 
-print("[DONE] output.json updated")
+print("DONE JSON")
