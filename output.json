@@ -2,73 +2,53 @@
   "mlb": [
     {
       "title": "Cleveland Guardians vs New York Yankees",
-      "date": "2026-06-02 19:00:00",
       "channel": "2798",
-      "player": "https://sharkstreams.net/player.php?channel=2798",
-      "stream": "https://lee1.lefiles.cfd/live/1/stream.m3u8?expires=1780443736&token=f14b1a00a25230f3e7f0f479a5318a987a7d15f4b694da71e58eda86c5c5517d"
+      "stream": null
     },
     {
       "title": "Toronto Blue Jays vs Atlanta Braves",
-      "date": "2026-06-02 19:15:00",
       "channel": "2799",
-      "player": "https://sharkstreams.net/player.php?channel=2799",
-      "stream": "https://lee1.lefiles.cfd/live/2/stream.m3u8?expires=1780444003&token=71bf5ea7a7074580d3c24ee84cac53a37a873f6d4e81d8d116dce7b05ca682b9"
+      "stream": null
     },
     {
       "title": "Chicago White Sox vs Minnesota Twins",
-      "date": "2026-06-02 19:40:00",
       "channel": "2800",
-      "player": "https://sharkstreams.net/player.php?channel=2800",
-      "stream": "https://lee1.lefiles.cfd/live/9/stream.m3u8?expires=1780443656&token=0efda6d5839aa0501b36c053af57f6d404e7037f896ad40b3def484bdc68a03e"
+      "stream": null
     },
     {
       "title": "San Francisco Giants vs Milwaukee Brewers",
-      "date": "2026-06-02 19:40:00",
       "channel": "2801",
-      "player": "https://sharkstreams.net/player.php?channel=2801",
-      "stream": "https://lee1.lefiles.cfd/live/3/stream.m3u8?expires=1780443652&token=5bd0768bd9fd116c30e22f5c138ee422b71083f15d4794f5b2d35944447c703e"
+      "stream": null
     },
     {
       "title": "Texas Rangers vs St. Louis Cardinals",
-      "date": "2026-06-02 19:40:00",
       "channel": "2802",
-      "player": "https://sharkstreams.net/player.php?channel=2802",
-      "stream": "https://lee1.lefiles.cfd/live/4/stream.m3u8?expires=1780444575&token=dd00b7315856a11a9a8544555c444c3758d82ba42d0816f296ccc31ae45f0639"
+      "stream": null
     },
     {
       "title": "Athletics vs Chicago Cubs",
-      "date": "2026-06-02 20:05:00",
       "channel": "2803",
-      "player": "https://sharkstreams.net/player.php?channel=2803",
-      "stream": "https://lee2.lefiles.cfd/live/5/stream.m3u8?expires=1780445797&token=5f1f37c033839c054d9ff8111cdbfaf9693a752e734905516a01732f27a8d8c1"
+      "stream": null
     },
     {
       "title": "Pittsburgh Pirates vs Houston Astros",
-      "date": "2026-06-02 20:10:00",
       "channel": "2804",
-      "player": "https://sharkstreams.net/player.php?channel=2804",
-      "stream": "https://lee2.lefiles.cfd/live/6/stream.m3u8?expires=1780445925&token=9da1b51b9e7083651277a6432897fc93d62e97294fe63aff28ea7098c2f16979"
+      "stream": null
     },
     {
       "title": "Colorado Rockies vs Los Angeles Angels",
-      "date": "2026-06-02 21:38:00",
       "channel": "2805",
-      "player": "https://sharkstreams.net/player.php?channel=2805",
-      "stream": "https://lee2.lefiles.cfd/live/7/stream.m3u8?expires=1780447589&token=44fff37dfd8dc28dfeec294cb2adec2c9108ae05aebf537d1f100731b90e953f"
+      "stream": null
     },
     {
       "title": "New York Mets vs Seattle Mariners",
-      "date": "2026-06-02 21:40:00",
       "channel": "2806",
-      "player": "https://sharkstreams.net/player.php?channel=2806",
-      "stream": "https://lee2.lefiles.cfd/live/8/stream.m3u8?expires=1780447590&token=66cd2086fe1ab8d6b5b14c89b37f9cc0a7aeacf8a86188e3cd923682d3f23695"
+      "stream": null
     },
     {
       "title": "Los Angeles Dodgers vs Arizona Diamondbacks",
-      "date": "2026-06-02 21:40:00",
       "channel": "2807",
-      "player": "https://sharkstreams.net/player.php?channel=2807",
-      "stream": "https://lee2.lefiles.cfd/live/10/stream.m3u8?expires=1780446034&token=7292b9f8d4569ec08fbf3767896a780762f936364cb38d3bb85005d7bee229fe"
+      "stream": null
     }
   ],
   "nba": [],
@@ -76,10 +56,8 @@
   "nhl": [
     {
       "title": "Vegas Golden Knights vs Carolina Hurricanes",
-      "date": "2026-06-02 20:00:00",
       "channel": "2793",
-      "player": "https://sharkstreams.net/player.php?channel=2793",
-      "stream": "https://lee1.lefiles.cfd/live/nhl/stream.m3u8?expires=1780472249&token=260850608419a49a334e1fabd82348c3c210c3679fccf8ccf2a2769f134cfe4f"
+      "stream": null
     }
   ],
   "nfl": []
