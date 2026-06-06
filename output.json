@@ -5,7 +5,7 @@
     {
       "title": "New York Knicks vs San Antonio Spurs",
       "channel": "2834",
-      "stream": "https://lba1.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=a171d6254c46bb55f7d68805e603f9516cddba80832b14831b9b2fe8e276d109"
+      "stream": "https://lba3.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=4ba37e7a1a1229a06232d05ae9de3d8a0e6c2fdb89f6ea56f0bca424ee1564b1"
     }
   ],
   "nfl": [],
@@ -14,12 +14,12 @@
     {
       "title": "New York Knicks vs San Antonio Spurs",
       "channel": "2834",
-      "stream": "https://lba5.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=67306d6429b1086c3657cfbefc61f550ee068997552fd67cebdf4d69ec344c50"
+      "stream": "https://lba3.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=4ba37e7a1a1229a06232d05ae9de3d8a0e6c2fdb89f6ea56f0bca424ee1564b1"
     },
     {
       "title": "Winnipeg Blue Bombers vs Calgary Stampeders",
       "channel": "2835",
-      "stream": "https://lee1.lefiles.cfd/live/cfl/stream.m3u8?expires=1780707789&token=2af43060e40d5db79f5c3474c5dc05c5549cac8b6ca39cdc3b5feeb3897fa1ff"
+      "stream": "https://lee1.lefiles.cfd/live/cfl/stream.m3u8?expires=1780707823&token=c8b9a701980bd0ef9379b95b0381d2df4294d471a4aacfe3f9ca0c961e251167"
     }
   ],
   "motorsports": []
