@@ -1,25 +1,25 @@
 {
   "soccer": [],
   "mlb": [],
-  "nba": [
+  "nba": [],
+  "nfl": [],
+  "nhl": [
     {
-      "title": "New York Knicks vs San Antonio Spurs",
-      "channel": "2834",
-      "stream": "https://lba3.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=4ba37e7a1a1229a06232d05ae9de3d8a0e6c2fdb89f6ea56f0bca424ee1564b1"
+      "title": "Carolina Hurricanes vs Vegas Golden Knights",
+      "channel": "2836",
+      "stream": "https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797664&token=b86ca7c51d117c3e37b75d25ac6112c172694b518844c8beb415f0da45b30126"
     }
   ],
-  "nfl": [],
-  "nhl": [],
   "fighting": [
     {
-      "title": "New York Knicks vs San Antonio Spurs",
-      "channel": "2834",
-      "stream": "https://lba3.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=4ba37e7a1a1229a06232d05ae9de3d8a0e6c2fdb89f6ea56f0bca424ee1564b1"
+      "title": "UFC Fight Night: Muhammad v. Bonfim",
+      "channel": "2837",
+      "stream": "https://lba3.lefiles.cfd/live/ufc/stream.m3u8?expires=1780797649&token=49dfaf26b6b3545c147780ac292a8cad30cdda7828e38d753f7af661dbb75f50"
     },
     {
-      "title": "Winnipeg Blue Bombers vs Calgary Stampeders",
-      "channel": "2835",
-      "stream": "https://lee1.lefiles.cfd/live/cfl/stream.m3u8?expires=1780707823&token=c8b9a701980bd0ef9379b95b0381d2df4294d471a4aacfe3f9ca0c961e251167"
+      "title": "Carolina Hurricanes vs Vegas Golden Knights",
+      "channel": "2836",
+      "stream": "https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797664&token=b86ca7c51d117c3e37b75d25ac6112c172694b518844c8beb415f0da45b30126"
     }
   ],
   "motorsports": []

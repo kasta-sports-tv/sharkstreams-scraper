@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA",New York Knicks vs San Antonio Spurs
-https://lba3.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=4ba37e7a1a1229a06232d05ae9de3d8a0e6c2fdb89f6ea56f0bca424ee1564b1
-#EXTINF:-1 group-title="FIGHTING",New York Knicks vs San Antonio Spurs
-https://lba3.lefiles.cfd/live/spurs/stream.m3u8?expires=1780707510&token=4ba37e7a1a1229a06232d05ae9de3d8a0e6c2fdb89f6ea56f0bca424ee1564b1
-#EXTINF:-1 group-title="FIGHTING",Winnipeg Blue Bombers vs Calgary Stampeders
-https://lee1.lefiles.cfd/live/cfl/stream.m3u8?expires=1780707823&token=c8b9a701980bd0ef9379b95b0381d2df4294d471a4aacfe3f9ca0c961e251167
+#EXTINF:-1 group-title="NHL",Carolina Hurricanes vs Vegas Golden Knights
+https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797664&token=b86ca7c51d117c3e37b75d25ac6112c172694b518844c8beb415f0da45b30126
+#EXTINF:-1 group-title="FIGHTING",UFC Fight Night: Muhammad v. Bonfim
+https://lba3.lefiles.cfd/live/ufc/stream.m3u8?expires=1780797649&token=49dfaf26b6b3545c147780ac292a8cad30cdda7828e38d753f7af661dbb75f50
+#EXTINF:-1 group-title="FIGHTING",Carolina Hurricanes vs Vegas Golden Knights
+https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797664&token=b86ca7c51d117c3e37b75d25ac6112c172694b518844c8beb415f0da45b30126
