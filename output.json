@@ -7,19 +7,19 @@
     {
       "title": "Carolina Hurricanes vs Vegas Golden Knights",
       "channel": "2836",
-      "stream": "https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797664&token=b86ca7c51d117c3e37b75d25ac6112c172694b518844c8beb415f0da45b30126"
+      "stream": "https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797649&token=60810382815b4eb79997c07cb2cf6d4100c106abb602247cbefc3b4fc38a1bb4"
     }
   ],
   "fighting": [
     {
       "title": "UFC Fight Night: Muhammad v. Bonfim",
       "channel": "2837",
-      "stream": "https://lba3.lefiles.cfd/live/ufc/stream.m3u8?expires=1780797649&token=49dfaf26b6b3545c147780ac292a8cad30cdda7828e38d753f7af661dbb75f50"
+      "stream": "https://lba3.lefiles.cfd/live/ufc/stream.m3u8?expires=1780797647&token=2407048e0ff2ac090fe199e32975354b34b8b4e2248ec1a2c8875f01630d3278"
     },
     {
       "title": "Carolina Hurricanes vs Vegas Golden Knights",
       "channel": "2836",
-      "stream": "https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797664&token=b86ca7c51d117c3e37b75d25ac6112c172694b518844c8beb415f0da45b30126"
+      "stream": "https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797649&token=60810382815b4eb79997c07cb2cf6d4100c106abb602247cbefc3b4fc38a1bb4"
     }
   ],
   "motorsports": []
