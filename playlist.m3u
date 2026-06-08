@@ -1,7 +1,1 @@
 #EXTM3U
-#EXTINF:-1 group-title="NHL",Carolina Hurricanes vs Vegas Golden Knights
-https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797649&token=60810382815b4eb79997c07cb2cf6d4100c106abb602247cbefc3b4fc38a1bb4
-#EXTINF:-1 group-title="FIGHTING",UFC Fight Night: Muhammad v. Bonfim
-https://lba3.lefiles.cfd/live/ufc/stream.m3u8?expires=1780797647&token=2407048e0ff2ac090fe199e32975354b34b8b4e2248ec1a2c8875f01630d3278
-#EXTINF:-1 group-title="FIGHTING",Carolina Hurricanes vs Vegas Golden Knights
-https://lba4.lefiles.cfd/live/carolina/stream.m3u8?expires=1780797649&token=60810382815b4eb79997c07cb2cf6d4100c106abb602247cbefc3b4fc38a1bb4
