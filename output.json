@@ -1,9 +1,21 @@
 {
   "soccer": [],
   "mlb": [],
-  "nba": [],
+  "nba": [
+    {
+      "title": "San Antonio Spurs vs New York Knicks",
+      "channel": "2839",
+      "stream": "https://lba4.lefiles.cfd/live/spurs/stream.m3u8?expires=1781138736&token=1dff830116a37ec5a59f6e63ac2236f004cedb533edb7f12b96cdafdc7553e95"
+    }
+  ],
   "nfl": [],
   "nhl": [],
-  "fighting": [],
+  "fighting": [
+    {
+      "title": "San Antonio Spurs vs New York Knicks",
+      "channel": "2839",
+      "stream": "https://lba4.lefiles.cfd/live/spurs/stream.m3u8?expires=1781138736&token=1dff830116a37ec5a59f6e63ac2236f004cedb533edb7f12b96cdafdc7553e95"
+    }
+  ],
   "motorsports": []
 }

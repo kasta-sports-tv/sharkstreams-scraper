@@ -1,1 +1,5 @@
 #EXTM3U
+#EXTINF:-1 group-title="NBA",San Antonio Spurs vs New York Knicks
+https://lba4.lefiles.cfd/live/spurs/stream.m3u8?expires=1781138736&token=1dff830116a37ec5a59f6e63ac2236f004cedb533edb7f12b96cdafdc7553e95
+#EXTINF:-1 group-title="FIGHTING",San Antonio Spurs vs New York Knicks
+https://lba4.lefiles.cfd/live/spurs/stream.m3u8?expires=1781138736&token=1dff830116a37ec5a59f6e63ac2236f004cedb533edb7f12b96cdafdc7553e95
