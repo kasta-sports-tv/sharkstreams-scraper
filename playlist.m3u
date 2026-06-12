@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA",San Antonio Spurs vs New York Knicks
-https://lba5.lefiles.cfd/live/spurs/stream.m3u8?expires=1781165650&token=191bbfdb893fd491aac8cbeabab83adc7b5291937086a004de78641622d9e87b
-#EXTINF:-1 group-title="FIGHTING",San Antonio Spurs vs New York Knicks
-https://lba4.lefiles.cfd/live/spurs/stream.m3u8?expires=1781165650&token=8245cc49f5eb6c6e959f4dcd01dbf8640c78e219b41a15ae19fb10eb71bdfc7b
+#EXTINF:-1 group-title="NHL",Vegas Golden Knights vs Carolina Hurricanes
+https://lba4.lefiles.cfd/live/knights/stream.m3u8?expires=1781210170&token=67f569c6f9a79d0ef5c09ecb66e0dadc777443e8fe5fc553cb403520f0b826aa
+#EXTINF:-1 group-title="FIGHTING",Vegas Golden Knights vs Carolina Hurricanes
+https://lba4.lefiles.cfd/live/knights/stream.m3u8?expires=1781210170&token=67f569c6f9a79d0ef5c09ecb66e0dadc777443e8fe5fc553cb403520f0b826aa
