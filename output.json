@@ -1,20 +1,25 @@
 {
   "soccer": [],
   "mlb": [],
-  "nba": [
+  "nba": [],
+  "nfl": [],
+  "nhl": [
     {
-      "title": "New York Knicks vs San Antonio Spurs",
-      "channel": "2841",
-      "stream": "https://lba6.lefiles.cfd/live/spurs/stream.m3u8?expires=1781395282&token=813ee929aeb5b8a25ea47885233e5f18c84baee10d7daefe0ec06d5894e09207"
+      "title": "Carolina Hurricanes vs Vegas Golden Knights",
+      "channel": "2842",
+      "stream": "https://lba4.lefiles.cfd/live/nhl/stream.m3u8?expires=1781498562&token=d795d7163341cc4a2b436e59d35ad0f7eaba8a165ed1c61ef95f3cf77be9dea3"
     }
   ],
-  "nfl": [],
-  "nhl": [],
   "fighting": [
     {
-      "title": "New York Knicks vs San Antonio Spurs",
-      "channel": "2841",
-      "stream": "https://lba2.lefiles.cfd/live/spurs/stream.m3u8?expires=1781395282&token=2f371a03f39ec21dbb88949b75a31618cc54d8bddf359c7541b3b4625036e7b2"
+      "title": "Carolina Hurricanes vs Vegas Golden Knights",
+      "channel": "2842",
+      "stream": "https://lba4.lefiles.cfd/live/nhl/stream.m3u8?expires=1781498562&token=d795d7163341cc4a2b436e59d35ad0f7eaba8a165ed1c61ef95f3cf77be9dea3"
+    },
+    {
+      "title": "UFC Freedom 250: Topuria v. Gaethje",
+      "channel": "2843",
+      "stream": "https://lba3.lefiles.cfd/live/ufc/stream.m3u8?expires=1781498510&token=23089ac15f6da4777e224a66370050a6019b99f82fe2005bffd04ba9ccdadf87"
     }
   ],
   "motorsports": []
