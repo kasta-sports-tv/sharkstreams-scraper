@@ -4,17 +4,6 @@
   "nba": [],
   "nfl": [],
   "nhl": [],
-  "fighting": [
-    {
-      "title": "UFC Fight Night: Kape vs. Horiguchi",
-      "channel": "2844",
-      "stream": null
-    },
-    {
-      "title": "Chicago Sky  vs  Dallas Wings",
-      "channel": "2845",
-      "stream": null
-    }
-  ],
+  "fighting": [],
   "motorsports": []
 }
